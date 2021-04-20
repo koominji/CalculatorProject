@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //숫자 1 입력
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자 1 입력"
+        android:textSize="30dp"
+        android:textColor="#673AB7"
+        android:background="#ffffff"/>
+
+    //숫자 2 입력
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자 2 입력"
+        android:textSize="30dp"
+        android:textColor="#673AB7"
+        android:background="#ffffff"/>
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/seven"
+                android:text="7"/>
+            <Button
+                android:id="@+id/eight"
+                android:text="8"/>
+            <Button
+                android:id="@+id/nine"
+                android:text="9"/>
+            <Button
+                android:id="@+id/mul"
+                android:text="*"/>
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/four"
+                android:text="4"/>
+            <Button
+                android:id="@+id/five"
+                android:text="5"/>
+            <Button
+                android:id="@+id/six"
+                android:text="6"/>
+            <Button
+                android:id="@+id/sub"
+                android:text="-"/>
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/one"
+                android:text="1"/>
+            <Button
+                android:id="@+id/two"
+                android:text="2"/>
+            <Button
+                android:id="@+id/three"
+                android:text="3"/>
+            <Button
+                android:id="@+id/add"
+                android:text="+"/>
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="±"/>
+            <Button
+                android:id="@+id/zero"
+                android:text="0"/>
+            <Button
+                android:text="."/>
+            <Button
+                android:id="@+id/div"
+                android:text="/"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#F44336"/>
+
+
+</LinearLayout>
